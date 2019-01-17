@@ -10,8 +10,9 @@ const models = require('./models');
 const BookController = require('./controllers/book_controller');
 const AuthorController = require('./controllers/author_controller');
 
+const MONGO_URI = "mongodb://nphung:password1@ds211083.mlab.com:11083/book-tiki";
 mongoose.set("useCreateIndex", true);
-mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true });
+mongoose.connect(MONGO_URI, { useNewUrlParser: true });
 mongoose.connection
   .once("open", () => console.log("Connected to Mlab instance"))
   .on("err", err => console.log("Error connecting to Mlab", err));
