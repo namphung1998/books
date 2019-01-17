@@ -1,0 +1,11 @@
+export const FETCH_BOOKS_PENDING = "fetch_books_pending";
+export const FETCH_BOOKS_SUCCESS = "fetch_books_success";
+export const FETCH_BOOKS_FAILED = "fetch_books_failed";
+export const SELECT_BOOK = "select_book";
+export const UPDATE_BOOK_PENDING = 'update_book_pending';
+export const UPDATE_BOOK_SUCCESS = 'update_book_success';
+export const EDIT_TEXT_FIELD = 'edit_text_field';
+export const DELETE_BOOK_PENDING = 'delete_book_pending';
+export const DELETE_BOOK_SUCCESS = 'delete_book_success';
+export const CREATE_BOOK_PENDING = 'create_book_pending';
+export const CREATE_BOOK_SUCCESS = 'create_book_success';

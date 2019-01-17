@@ -1,0 +1,33 @@
+{
+  "name": "books",
+  "version": "1.0.0",
+  "description": "Assignment for Fullstack developer position",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --ignore client",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/namphung1998/books.git"
+  },
+  "author": "Nam Phung",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/namphung1998/books/issues"
+  },
+  "homepage": "https://github.com/namphung1998/books#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "mongodb": "^3.1.11",
+    "mongoose": "^5.4.4",
+    "morgan": "^1.9.1"
+  },
+  "devDependencies": {
+    "faker": "^4.1.0",
+    "nodemon": "^1.18.9"
+  }
+}
