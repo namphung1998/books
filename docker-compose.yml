@@ -1,0 +1,24 @@
+version: '3.6'
+services:
+  # server
+  server:
+    container_name: server
+    build: ./server
+    volumes:
+      - ./:/usr/src/server
+    command: node index.js
+    working_dir: /usr/src/server
+    ports:
+      - "4000:4000"
+  
+  # client
+  client:
+    container_name: client
+    build: ./client
+    volumes:
+      - ./:/usr/src/server
+    command: npm run start
+    working_dir: /usr/src/client
+    ports:
+      - "3000:3000"
+
